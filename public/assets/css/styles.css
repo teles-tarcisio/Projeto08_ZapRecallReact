@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAFAFA;
+}
+
+.main-container {
+    width: 392px;
+    margin: 100px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-logo img {
+    width: 218px;
+    margin: auto;
+}
+
+.launch-game {
+    width: 100%;
+    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+}
