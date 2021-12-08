@@ -1,5 +1,5 @@
 import LightningLogo from "./shared/LightningLogo.js";
-
+import Flashcard from "./Flashcard.js";
 function LaunchButton() {
     return (
         <div className="launch-game">
@@ -9,12 +9,27 @@ function LaunchButton() {
     );
 }
 
+function Header() {
+    return(
+        <header>
+            <img src="assets/images/logo-mini.png" alt="lightning mini logo"/>
+        </header>
+    );
+}
 
 export default function App() {
     return (
-        <div className="main-container">
-            <LightningLogo />
-            <LaunchButton />
-        </div>
+        <>
+          <Header />  
+            <div className="main-container">
+                {/*
+                <>
+                    <LightningLogo />
+                    <LaunchButton />
+                </>
+                */}
+                <Flashcard />
+            </div>
+        </>
     );
 }
