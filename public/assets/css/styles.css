@@ -39,7 +39,7 @@ header img {
     justify-content: center;
     align-items: center;
     padding: 24px 65px;
-    border: 3px solid #FFEF61;
+    border: 3px solid #FFEF61; /* props to change color!!!!!*/
     border-radius: 12px;
 }
 .custom-button h1 {
@@ -60,17 +60,37 @@ header img {
     border-radius: 12px;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
 }
-.flashcard-frame h2 {
+.flashcard-frame h1 {
     margin: 15px 15px auto auto;
 }
-.flashcard-frame h3 {
+.flashcard-frame h2 {
     margin: auto;
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
 }
+.flashcard-frame h3 {
+    margin: 15px auto auto auto;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: black;
+}
+.flashcard-frame h4 {
+    margin: auto 50px;
+    
+}
 .flashcard-frame img {
     width: 40px;
     height: 35px;
     margin: auto 15px 15px auto;
+}
+
+.answer-buttons {
+    display: flex;
+    flex-direction: row;   
+}
+.answer-buttons .custom-button {
+    width: 65px;
+
 }

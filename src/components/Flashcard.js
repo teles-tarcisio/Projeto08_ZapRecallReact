@@ -1,3 +1,5 @@
+import CustomButton from "./CustomButton.js";
+
 export default function Flashcard() {
     const flashCardInfo = {
         totalQuestions: 8,
@@ -6,9 +8,23 @@ export default function Flashcard() {
 
     return (
         <div className="flashcard-frame">
-            <h2>1/{flashCardInfo.totalQuestions}</h2>
-            <h3>{flashCardInfo.question}</h3>
+            {/*
+            <>
+            <h1>1/{flashCardInfo.totalQuestions}</h1>
+            <h2>{flashCardInfo.question}</h2>
             <img src="assets/images/turn.png" alt="arrow turn" />
+            </>
+            */}
+
+            <h3>{flashCardInfo.question}</h3>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ullamcorper at quis eu. Malesuada iaculis viverra a tincidunt arcu nullam. Orci tortor arcu placerat id sit et. Elementum in erat cras tortor at auctor diam.</h4>
+            
+            <div className="answer-buttons">
+                <CustomButton />
+                <CustomButton />
+                <CustomButton />
+                <CustomButton />
+            </div>
         </div>
     );
 }

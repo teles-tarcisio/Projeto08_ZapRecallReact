@@ -22,8 +22,8 @@ export default function App() {
                     <CustomButton />
                 </>
                 */}
-                <Flashcard />
                 
+                <Flashcard />
             </div>
         </>
     );
