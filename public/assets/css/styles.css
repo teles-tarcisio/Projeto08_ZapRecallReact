@@ -6,6 +6,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-container {
@@ -22,11 +23,22 @@ body {
     margin: auto;
 }
 
-.launch-game {
-    width: 100%;
+.custom-button {
+    width:100%;
     margin-top: 260px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 24px 65px;
+    border: 3px solid #FFEF61;
+    border-radius: 12px;
+}
+.custom-button h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: black;
+    margin: 0 5px;
 }
 
 .flashcard-frame {

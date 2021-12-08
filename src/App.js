@@ -1,13 +1,7 @@
-import LightningLogo from "./shared/LightningLogo.js";
-import Flashcard from "./Flashcard.js";
-function LaunchButton() {
-    return (
-        <div className="launch-game">
-            <input type="button" value="Praticar React" />
-            <img src="assets/images/next.png" alt="fast forward icon" />
-        </div>
-    );
-}
+import LightningLogo from "./components/LightningLogo";
+import CustomButton from "./components/CustomButton.js";
+import Flashcard from "./components/Flashcard";
+
 
 function Header() {
     return(
@@ -22,13 +16,14 @@ export default function App() {
         <>
           <Header />  
             <div className="main-container">
-                {/*
+                
                 <>
                     <LightningLogo />
-                    <LaunchButton />
+                    <CustomButton />
                 </>
-                */}
+                {/*
                 <Flashcard />
+                */}
             </div>
         </>
     );
