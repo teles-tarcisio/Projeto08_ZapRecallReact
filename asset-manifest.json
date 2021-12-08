@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Projeto08_ZapRecallReact/static/js/main.da57fabc.chunk.js",
-    "main.js.map": "/Projeto08_ZapRecallReact/static/js/main.da57fabc.chunk.js.map",
+    "main.js": "/Projeto08_ZapRecallReact/static/js/main.a8d9507a.chunk.js",
+    "main.js.map": "/Projeto08_ZapRecallReact/static/js/main.a8d9507a.chunk.js.map",
     "runtime-main.js": "/Projeto08_ZapRecallReact/static/js/runtime-main.96815b45.js",
     "runtime-main.js.map": "/Projeto08_ZapRecallReact/static/js/runtime-main.96815b45.js.map",
     "static/js/2.b60446bb.chunk.js": "/Projeto08_ZapRecallReact/static/js/2.b60446bb.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.96815b45.js",
     "static/js/2.b60446bb.chunk.js",
-    "static/js/main.da57fabc.chunk.js"
+    "static/js/main.a8d9507a.chunk.js"
   ]
 }
