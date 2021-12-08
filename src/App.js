@@ -14,16 +14,16 @@ function Header() {
 export default function App() {
     return (
         <>
-          <Header />  
+          <Header />
             <div className="main-container">
-                
+                {/*
                 <>
                     <LightningLogo />
                     <CustomButton />
                 </>
-                {/*
-                <Flashcard />
                 */}
+                <Flashcard />
+                
             </div>
         </>
     );
