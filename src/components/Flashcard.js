@@ -1,10 +1,31 @@
-import CustomButton from "./CustomButton.js";
+import SmallButton from "./SmallButton.js";
 
 export default function Flashcard() {
     const flashCardInfo = {
         totalQuestions: 8,
         question: "O que é JSX?",
     }
+
+    const answerButtons = [
+        {
+            buttonText: "Aprendi agora",
+            borderColor: "#000000"
+        },
+        {
+            buttonText: "Não lembrei",
+            borderColor: "#F74848"
+        },
+        {
+            buttonText: "Lembrei com esforço",
+            borderColor: "#62DB38"
+        },
+        {
+            buttonText: "Zap!",
+            borderColor: "#FFEF61"
+        }
+    ];
+
+
 
     return (
         <div className="flashcard-frame">
@@ -19,12 +40,11 @@ export default function Flashcard() {
             <h3>{flashCardInfo.question}</h3>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ullamcorper at quis eu. Malesuada iaculis viverra a tincidunt arcu nullam. Orci tortor arcu placerat id sit et. Elementum in erat cras tortor at auctor diam.</h4>
             
-            <div className="answer-buttons">
-                <CustomButton />
-                <CustomButton />
-                <CustomButton />
-                <CustomButton />
-            </div>
+            <ul className="answer-buttons">
+                {answerButtons.map((buttonInfo) => (
+                    <SmallButton buttonText={buttonInfo.buttonText} />)
+                )}
+            </ul>
         </div>
     );
 }

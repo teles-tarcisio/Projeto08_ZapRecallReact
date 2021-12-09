@@ -1,5 +1,5 @@
 import LightningLogo from "./components/LightningLogo";
-import CustomButton from "./components/CustomButton.js";
+import BigButton from "./components/BigButton.js";
 import Flashcard from "./components/Flashcard";
 
 
@@ -19,7 +19,7 @@ export default function App() {
                 {/*
                 <>
                     <LightningLogo />
-                    <CustomButton />
+                    <BigButton />
                 </>
                 */}
                 

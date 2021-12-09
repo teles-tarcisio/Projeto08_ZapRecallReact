@@ -90,19 +90,27 @@ header img {
 .answer-buttons {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-.answer-buttons .custom-button {
+.answer-buttons .small-button {
+    width: 100%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #FFEF61;
+    /*
+    border-width: 3px;
+    border-style: solid;
+    */
+    border-radius: 12px;
     width: 65px;
     height: 48px;
     text-align: center;
-    align-items: center;
     font-weight: 400;
     font-size: 10px;
     line-height: 13px;
 }
 .answer-buttons:last-child {
     font-weight: 700;
-}
-.answer-buttons img {
-    display: none;
 }
