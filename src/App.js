@@ -6,22 +6,21 @@ import BigButton from "./components/BigButton.js";
 import Flashcard from "./components/Flashcard";
 
 export default function App() {
-    const [display, setDisplay] = useState("");
+    const [hidden, setHidden] = useState(true);
 
-    function launchGame() {
-        setDisplay("hidden");
+    function hideItems() {
+        const newHidden = !hidden;
+        setHidden(newHidden);
     }
-
+ 
     return (
         <div className="main-container" >
-            <Header display={display} />
+            <Header display={hidden} />
 
-            <LightningLogo display={display}/>
-            <BigButton parentFunction={launchGame} />
+            <LightningLogo display={hidden} />
+            <BigButton display={hidden} parentFunction={hideItems} />
 
-            {/*
-            <Flashcard display={display} />
-            */}
+            <Flashcard display={hidden} />
         </div>
     );
 }

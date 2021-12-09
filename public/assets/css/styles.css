@@ -9,10 +9,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.hidden {
-    display: none;
-}
-
 .main-container {
     width: 100%;
     margin: 25px;
@@ -35,7 +31,7 @@ header img {
 
 .big-logo img {
     width: 218px;
-    margin: 25px auto;
+    margin: 100px auto;
 }
 
 .big-button {
@@ -119,4 +115,8 @@ header img {
 }
 .answer-buttons:last-child {
     font-weight: 700;
+}
+
+.hidden {
+    display: none;
 }

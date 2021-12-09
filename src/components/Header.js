@@ -1,6 +1,7 @@
-export default function Header(props) {
+export default function Header({display}) {
+    
     return(
-        <header className={props.display}>
+        <header className={ display ? "hidden" : ""}>
             <img src="assets/images/logo-mini.png" alt="lightning mini logo"/>
         </header>
     );

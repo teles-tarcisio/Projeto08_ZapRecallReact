@@ -1,4 +1,4 @@
-export default function BigButton({parentFunction}) {
+export default function BigButton({display, parentFunction}) {
 
     /*
     TODO: generalize button :
@@ -6,7 +6,7 @@ export default function BigButton({parentFunction}) {
     */
 
     return (
-        <div className="big-button" onClick={parentFunction}>
+        <div className={display ? "big-button" : "big-button hidden"} onClick={parentFunction}>
             <h1>Praticar React</h1>
             <img src="assets/images/next.png" alt="fast forward icon" />
         </div>

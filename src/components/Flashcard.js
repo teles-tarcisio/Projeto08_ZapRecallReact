@@ -1,6 +1,6 @@
 import SmallButton from "./SmallButton.js";
 
-export default function Flashcard() {
+export default function Flashcard({display}) {
     const flashCardInfo = {
         totalQuestions: 8,
         question: "O que é JSX?",
@@ -28,7 +28,7 @@ export default function Flashcard() {
 
 
     return (
-        <div className="flashcard-frame">
+        <div className={display ? "flashcard-frame hidden" : "flashcard-frame"}>
             {/*
             <>
             <h1>1/{flashCardInfo.totalQuestions}</h1>
