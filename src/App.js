@@ -1,30 +1,27 @@
+import { React, useState } from "react";
+
+import Header from "./components/Header.js";
 import LightningLogo from "./components/LightningLogo";
 import BigButton from "./components/BigButton.js";
 import Flashcard from "./components/Flashcard";
 
-
-function Header() {
-    return(
-        <header>
-            <img src="assets/images/logo-mini.png" alt="lightning mini logo"/>
-        </header>
-    );
-}
-
 export default function App() {
+    const [display, setDisplay] = useState("");
+
+    function launchGame() {
+        setDisplay("hidden");
+    }
+
     return (
-        <>
-          <Header />
-            <div className="main-container">
-                {/*
-                <>
-                    <LightningLogo />
-                    <BigButton />
-                </>
-                */}
-                
-                <Flashcard />
-            </div>
-        </>
+        <div className="main-container" >
+            <Header display={display} />
+
+            <LightningLogo display={display}/>
+            <BigButton parentFunction={launchGame} />
+
+            {/*
+            <Flashcard display={display} />
+            */}
+        </div>
     );
 }
