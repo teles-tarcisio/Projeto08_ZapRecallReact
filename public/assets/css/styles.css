@@ -55,38 +55,48 @@ header img {
     width: 392px;
     height: 576px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
     color: black;
 }
-.flashcard-frame h1 {
-    margin: 15px 15px auto auto;
+.card-side {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
 }
-.flashcard-frame h2 {
-    margin: auto;
+
+.card-side h1 {
+    position: relative;
+    top: 2%;
+    left: 93%;
+    z-index: 10;
+}
+.card-side h2 {
+    margin: 0 auto auto auto;
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
 }
-.flashcard-frame h3 {
-    margin: 15px auto auto auto;
+.card-side h3 {
+    margin: 0px; /*auto auto auto;*/
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     
 }
-.flashcard-frame h4 {
+.card-side h4 {
     margin: auto 50px;
     background-color: lightgoldenrodyellow;
 }
-.flashcard-frame img {
+.card-side img {
     width: 40px;
     height: 35px;
-    margin: auto 15px 15px auto;
+    margin: auto 5px 5px auto;
 }
 
 .answer-buttons {

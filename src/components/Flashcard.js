@@ -1,6 +1,11 @@
+import { useState } from "react";
+
 import SmallButton from "./SmallButton.js";
 
-export default function Flashcard({display}) {
+export default function Flashcard({ display }) {
+    const [cardFront, setCardFront] = useState("hidden");
+    const [cardBack, setCardBack] = useState("");
+
     const flashCardInfo = {
         totalQuestions: 8,
         question: "O que é JSX?",
@@ -29,22 +34,24 @@ export default function Flashcard({display}) {
 
     return (
         <div className={display ? "flashcard-frame hidden" : "flashcard-frame"}>
-            {/*
-            <>
-            <h1>1/{flashCardInfo.totalQuestions}</h1>
-            <h2>{flashCardInfo.question}</h2>
-            <img src="assets/images/turn.png" alt="arrow turn" />
-            </>
-            */}
+            <div className={`card-side ${cardFront}`}>
+                <h1>1/{flashCardInfo.totalQuestions}</h1>
+                <h2>{flashCardInfo.question}</h2>
+                <img src="assets/images/turn.png" alt="arrow turn" />
+            </div>
 
-            <h3>{flashCardInfo.question}</h3>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ullamcorper at quis eu. Malesuada iaculis viverra a tincidunt arcu nullam. Orci tortor arcu placerat id sit et. Elementum in erat cras tortor at auctor diam.</h4>
-            
-            <ul className="answer-buttons">
-                {answerButtons.map((buttonInfo) => (
-                    <SmallButton buttonText={buttonInfo.buttonText} />)
-                )}
-            </ul>
+            <div className={`card-side ${cardBack}`}>
+                <h1>1/{flashCardInfo.totalQuestions}</h1>
+                <h3>{flashCardInfo.question}</h3>
+
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ullamcorper at quis eu. Malesuada iaculis viverra a tincidunt arcu nullam. Orci tortor arcu placerat id sit et. Elementum in erat cras tortor at auctor diam.</h4>
+
+                <ul className="answer-buttons">
+                    {answerButtons.map((buttonInfo) => (
+                        <SmallButton buttonText={buttonInfo.buttonText} />)
+                    )}
+                </ul>
+            </div>
         </div>
     );
 }
