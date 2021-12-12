@@ -18,6 +18,8 @@ header img {
 .flashcard-frame {
   width: 392px;
   height: 576px;
+  position: absolute;
+  margin: 100px auto auto auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,35 +28,31 @@ header img {
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
   color: black;
 }
+.card-front-side h1,.card-back-side h1 {
+  position: relative;
+  margin: 0 0 0 auto;
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  z-index: 10;
+}
 
 .card-front-side,.card-back-side {
   width: 95%;
   height: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 }
 
-.card-front-side h1 {
-  margin: 0 0 auto auto;
-  z-index: 10;
-}
 .card-front-side h2 {
   margin: auto auto auto auto;
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
-}
-.card-side h3 {
-  margin: 0px; /*auto auto auto;*/
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  
-}
-.card-side h4 {
-  margin: auto 50px;
-  background-color: lightgoldenrodyellow;
 }
 .card-front-side img {
   width: 40px;
@@ -62,7 +60,22 @@ header img {
   margin: auto 5px 5px auto;
 }
 
+.card-back-side h3 {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.card-back-side h4 {
+  margin: auto 48px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .answer-buttons {
+  margin: auto auto 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -70,22 +83,31 @@ header img {
 .answer-buttons .small-button {
   width: 100%;
   margin: 0 5px;
+  padding: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #FFEF61;
-  /*
-  border-width: 3px;
-  border-style: solid;
-  */
+  border: 3px solid;
   border-radius: 12px;
   width: 65px;
-  height: 48px;
+  height: 50px;
   text-align: center;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
 }
-.answer-buttons:last-child {
+
+.small-button:nth-child(2) {
+  border: 3px solid #F74848;
+}
+.small-button:nth-child(3) {
+  border-color: #62DB38;
+}
+.small-button:nth-child(4) {
+  border-color: #FFEF61;
   font-weight: 700;
 }
+
+
+
+
