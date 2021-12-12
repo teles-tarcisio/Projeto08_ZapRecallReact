@@ -11,77 +11,11 @@ body {
 
 .main-container {
     width: 100%;
-    margin: auto;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-
-.card-side {
-    width: 95%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    background-color: lightgray;
-}
-
-.card-side h1 {
-    position: relative;
-    top: 2%;
-    left: 93%;
-    z-index: 10;
-}
-.card-side h2 {
-    margin: 0 auto auto auto;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 33px;
-}
-.card-side h3 {
-    margin: 0px; /*auto auto auto;*/
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    
-}
-.card-side h4 {
-    margin: auto 50px;
-    background-color: lightgoldenrodyellow;
-}
-.card-side img {
-    width: 40px;
-    height: 35px;
-    margin: auto 5px 5px auto;
-}
-
-.answer-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.answer-buttons .small-button {
-    width: 100%;
-    margin: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #FFEF61;
-    /*
-    border-width: 3px;
-    border-style: solid;
-    */
-    border-radius: 12px;
-    width: 65px;
-    height: 48px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 13px;
-}
-.answer-buttons:last-child {
-    font-weight: 700;
 }
 
 .hidden {

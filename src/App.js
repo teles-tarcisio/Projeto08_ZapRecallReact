@@ -8,8 +8,8 @@ export default function App() {
     return (
         <div className="main-container" >
             
-            <StartPage />
-            {/* <InGamePage /> */}
+            {/* <StartPage /> */}
+            <InGamePage />
             
         </div>
     );
