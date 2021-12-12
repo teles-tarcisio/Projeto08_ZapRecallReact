@@ -1,15 +1,17 @@
 import imgFFIcon from "../../assets/images/next.png";
 
 
-export default function BigButton() {
+export default function BigButton({setPage}) {
 
-    /*
-    TODO: generalize button :
-        use props to change button contents and color!!
-    */
+    function clicked() {
+        alert("clicked!");
+        console.log(setPage);
+        setPage('ingame');
+    }
+
 
     return (
-        <div className="big-button">
+        <div className="big-button" onClick={clicked}>
             <h1>Praticar React</h1>
             <img src={imgFFIcon} alt="fast forward icon" />
         </div>
