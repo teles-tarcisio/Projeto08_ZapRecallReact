@@ -1,26 +1,17 @@
 import { React, useState } from "react";
 
-import Header from "./components/Header.js";
-import LightningLogo from "./components/LightningLogo";
-import BigButton from "./components/BigButton.js";
-import Flashcard from "./components/Flashcard";
 
+import StartPage from "./components/StartPage/StartPage.js";
+import InGamePage from "./components/InGamePage/InGamePage.js";
 export default function App() {
-    const [hidden, setHidden] = useState(true);
-
-    function hideItems() {
-        const newHidden = !hidden;
-        setHidden(newHidden);
-    }
- 
+     
     return (
         <div className="main-container" >
-            <Header display={hidden} />
-
-            <LightningLogo display={hidden} />
-            <BigButton display={hidden} parentFunction={hideItems} />
-
-            <Flashcard display={hidden} />
+            
+            <StartPage />
+            {/* <InGamePage /> */}
+            
         </div>
     );
 }
+    

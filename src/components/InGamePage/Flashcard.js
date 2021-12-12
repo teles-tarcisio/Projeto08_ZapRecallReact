@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import SmallButton from "./SmallButton.js";
+import SmallButton from "../SmallButton.js";
 
-export default function Flashcard({ display }) {
-    const [cardFront, setCardFront] = useState("hidden");
-    const [cardBack, setCardBack] = useState("");
 
+
+export default function Flashcard() {
+    
     const flashCardInfo = {
         totalQuestions: 8,
         question: "O que é JSX?",
@@ -33,14 +33,15 @@ export default function Flashcard({ display }) {
 
 
     return (
-        <div className={display ? "flashcard-frame hidden" : "flashcard-frame"}>
-            <div className={`card-side ${cardFront}`}>
+        <div className="flashcard-frame">
+            <div className="card-side">
                 <h1>1/{flashCardInfo.totalQuestions}</h1>
                 <h2>{flashCardInfo.question}</h2>
-                <img src="assets/images/turn.png" alt="arrow turn" />
+                <img src="../../assets/images/turn.png" alt="arrow turn" />
             </div>
 
-            <div className={`card-side ${cardBack}`}>
+            {/*
+            <div className="card-side">
                 <h1>1/{flashCardInfo.totalQuestions}</h1>
                 <h3>{flashCardInfo.question}</h3>
 
@@ -52,6 +53,7 @@ export default function Flashcard({ display }) {
                     )}
                 </ul>
             </div>
+                    */}
         </div>
     );
 }
