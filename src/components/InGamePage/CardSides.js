@@ -13,7 +13,7 @@ function CardFrontSide({setSide}) {
   );
 }
 
-function CardBackSide({state, setState}) {
+function CardBackSide({state, setState, setBorderColor}) {
   const [backState, setBackState] = useState('asking');
   
   return (
@@ -24,12 +24,10 @@ function CardBackSide({state, setState}) {
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ullamcorper at quis eu. Malesuada iaculis viverra a tincidunt arcu nullam. Orci tortor arcu placerat id sit et. Elementum in erat cras tortor at auctor diam.</h4>
 
           { backState === 'asking' ?
-            <AnswerButtons state={backState} setState={setBackState}/>
+            <AnswerButtons state={backState} setState={setBackState} setBorderColor={setBorderColor}/>
             :
             <img src={imgTurnArrow} alt="arrow turn" onClick={() => setBackState('asking')}/>
-          }
-
-          
+          }          
       </div>
   );
 }

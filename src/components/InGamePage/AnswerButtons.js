@@ -3,7 +3,7 @@ import { React, useState } from "react";
 const answerButtons = [
     {
         text: "Aprendi agora",
-        borderColor: "#000000"
+        borderColor: "#000000",
     },
     {
         text: "Não lembrei",
@@ -24,15 +24,31 @@ function SmallButton(props) {
     const borderColor = props.children[1];
     const state = props.children[2];
     const setState = props.children[4];
-    
-    return (
-        <li className="small-button" onClick={() => setState('answered')}>
+    const setBorderColor = props.children[5];
+
+    function answerType(type) {
+        if (borderColor === "#000000") {
+            setBorderColor("black");
+        }
+        if (borderColor === "#F74848") {
+            setBorderColor("red");
+        }
+        if (borderColor === "#62DB38") {
+            setBorderColor("green");
+        }
+        if (borderColor === "#FFEF61") {
+            setBorderColor("yellow");
+        }
+    }
+
+   return (
+        <li className="small-button" onClick={() => answerType(borderColor)}>
             <h5>{text}</h5>
         </li>
     );
 }
 
-export default function AnswerButtons({state, setState}) {
+export default function AnswerButtons({state, setState, setBorderColor}) {
     return (
         <ul className="answer-buttons">
             {answerButtons.map((answer) => (
@@ -40,6 +56,7 @@ export default function AnswerButtons({state, setState}) {
                     {answer.text}
                     {answer.borderColor}
                     {state} {setState}
+                    {setBorderColor}
                 </SmallButton>)
             )}
         </ul>
