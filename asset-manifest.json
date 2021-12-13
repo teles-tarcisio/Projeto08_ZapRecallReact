@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.js": "/Projeto08_ZapRecallReact/static/js/main.a8d9507a.chunk.js",
-    "main.js.map": "/Projeto08_ZapRecallReact/static/js/main.a8d9507a.chunk.js.map",
+    "main.css": "/Projeto08_ZapRecallReact/static/css/main.45f17380.chunk.css",
+    "main.js": "/Projeto08_ZapRecallReact/static/js/main.cdca1594.chunk.js",
+    "main.js.map": "/Projeto08_ZapRecallReact/static/js/main.cdca1594.chunk.js.map",
     "runtime-main.js": "/Projeto08_ZapRecallReact/static/js/runtime-main.96815b45.js",
     "runtime-main.js.map": "/Projeto08_ZapRecallReact/static/js/runtime-main.96815b45.js.map",
-    "static/js/2.b60446bb.chunk.js": "/Projeto08_ZapRecallReact/static/js/2.b60446bb.chunk.js",
-    "static/js/2.b60446bb.chunk.js.map": "/Projeto08_ZapRecallReact/static/js/2.b60446bb.chunk.js.map",
+    "static/js/2.e49d0edc.chunk.js": "/Projeto08_ZapRecallReact/static/js/2.e49d0edc.chunk.js",
+    "static/js/2.e49d0edc.chunk.js.map": "/Projeto08_ZapRecallReact/static/js/2.e49d0edc.chunk.js.map",
     "index.html": "/Projeto08_ZapRecallReact/index.html",
-    "static/js/2.b60446bb.chunk.js.LICENSE.txt": "/Projeto08_ZapRecallReact/static/js/2.b60446bb.chunk.js.LICENSE.txt"
+    "static/css/main.45f17380.chunk.css.map": "/Projeto08_ZapRecallReact/static/css/main.45f17380.chunk.css.map",
+    "static/js/2.e49d0edc.chunk.js.LICENSE.txt": "/Projeto08_ZapRecallReact/static/js/2.e49d0edc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.96815b45.js",
-    "static/js/2.b60446bb.chunk.js",
-    "static/js/main.a8d9507a.chunk.js"
+    "static/js/2.e49d0edc.chunk.js",
+    "static/css/main.45f17380.chunk.css",
+    "static/js/main.cdca1594.chunk.js"
   ]
 }
