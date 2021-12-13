@@ -15,7 +15,7 @@ header img {
   margin-right: auto;
 }
 
-.flashcard-frame {
+.flashcard-frame,.flashcarde-frame.blank{
   width: 392px;
   height: 576px;
   position: absolute;

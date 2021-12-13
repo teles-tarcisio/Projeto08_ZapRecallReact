@@ -20,24 +20,28 @@ const answerButtons = [
 ];
 
 function SmallButton(props) {
+    console.log(props.children);
     const text = props.children[0];
     const borderColor = props.children[1];
-    const state = props.children[2];
-    const setState = props.children[4];
-    const setBorderColor = props.children[5];
+    const setGameState = props.children[2];
+    const setBorderColor = props.children[3];
 
     function answerType(type) {
         if (borderColor === "#000000") {
             setBorderColor("black");
+            setGameState('answered');
         }
         if (borderColor === "#F74848") {
             setBorderColor("red");
+            setGameState('answered');
         }
         if (borderColor === "#62DB38") {
             setBorderColor("green");
+            setGameState('answered');
         }
         if (borderColor === "#FFEF61") {
             setBorderColor("yellow");
+            setGameState('answered');
         }
     }
 
@@ -48,14 +52,14 @@ function SmallButton(props) {
     );
 }
 
-export default function AnswerButtons({state, setState, setBorderColor}) {
+export default function AnswerButtons({setGameState, setBorderColor}) {
     return (
         <ul className="answer-buttons">
             {answerButtons.map((answer) => (
                 <SmallButton>
                     {answer.text}
                     {answer.borderColor}
-                    {state} {setState}
+                    {setGameState}
                     {setBorderColor}
                 </SmallButton>)
             )}
