@@ -34,10 +34,15 @@ const flashCardDecks = [
 
 export default function App() {
     const [actualPage, setActualPage] = useState('start');
+    const [questionCounter, setQuestionCounter] = useState(1);
      
     return (
         <div className="main-container" >
-            { actualPage === 'start' ? <StartPage setPage={setActualPage}/> : <InGamePage deck={flashCardDecks[0]}/> }            
+            { actualPage === 'start' ? <StartPage setPage={setActualPage}/> : <InGamePage 
+                deck={flashCardDecks[0]}
+                questionCounter={questionCounter}
+                setQuestionCounter={setQuestionCounter}
+            /> }            
         </div>
     );
 }
