@@ -1,18 +1,17 @@
-import { React, useState } from "react";
+import { React } from "react";
 
 import AnswerButtons from "./AnswerButtons.js";
 import imgTurnArrow from "../../assets/images/turn.png";
 
 function CardFrontSide(props) {
-  const {gameState, setGameState, cardSide,
-    setCardSide, setBorderColor, deck,
-    questionCounter, setQuestionCounter} = props;
+  const {deck,
+    questionCounter} = props;
 
   return (
       <div className="card-front-side">
-          <h1>{questionCounter}/{deck.length}</h1>
+          <h1 data-identifier="counter">{questionCounter}/{deck.length}</h1>
           <h2>{deck[questionCounter - 1]}</h2>          
-          <img src={imgTurnArrow} alt="arrow turn" onClick={() => props.setCardSide('back')}/>
+          <img data-identifier="arrow" src={imgTurnArrow} alt="arrow turn" onClick={() => props.setCardSide('back')}/>
       </div>
   );
 }
@@ -33,7 +32,7 @@ function CardBackSide(props) {
 
   return (
       <div className="card-back-side">
-          <h1>{questionCounter}/{deck.length}</h1>
+          <h1 data-identifier="counter">{questionCounter}/{deck.length}</h1>
           <h3>{deck[questionCounter - 1]}</h3>            
 
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non ullamcorper at quis eu. Malesuada iaculis viverra a tincidunt arcu nullam. Orci tortor arcu placerat id sit et. Elementum in erat cras tortor at auctor diam.</h4>
@@ -44,7 +43,7 @@ function CardBackSide(props) {
               setBorderColor={setBorderColor}
             />
             :
-            <img src={imgTurnArrow} alt="arrow turn" onClick={nextQuestion}/>
+            <img data-identifier="arrow" src={imgTurnArrow} alt="arrow turn" onClick={nextQuestion}/>
           }
       </div>
   );

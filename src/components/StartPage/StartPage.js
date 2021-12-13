@@ -7,7 +7,7 @@ export default function StartPage({setPage}) {
   return(
     <div className="start-page">
       <LightningLogo  />
-      <BigButton setPage={setPage} />
+      <BigButton data-identifier="start-zap-recall" setPage={setPage} />
     </div>
   );
 }

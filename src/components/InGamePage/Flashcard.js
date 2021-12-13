@@ -19,7 +19,7 @@ export default function Flashcard({gameState, setGameState, deck, questionCounte
     }
     
     return (
-        <div className={`flashcard-frame ${borderColor}`}>
+        <div data-identifier="flashcard" className={`flashcard-frame ${borderColor}`}>
             {cardSide === 'front' ?
                 <CardFrontSide
                     gameState={gameState}
