@@ -54,7 +54,7 @@ header img {
   font-size: 28px;
   line-height: 33px;
 }
-.card-front-side img {
+.card-front-side img,.card-back-side img {
   width: 40px;
   height: 35px;
   margin: auto 5px 5px auto;

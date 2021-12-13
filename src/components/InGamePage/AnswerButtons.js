@@ -1,3 +1,5 @@
+import { React, useState } from "react";
+
 const answerButtons = [
     {
         text: "Aprendi agora",
@@ -17,19 +19,28 @@ const answerButtons = [
     }
 ];
 
-function SmallButton({text, borderColor}) {
+function SmallButton(props) {
+    const text = props.children[0];
+    const borderColor = props.children[1];
+    const state = props.children[2];
+    const setState = props.children[4];
+    
     return (
-        <li className="small-button">
+        <li className="small-button" onClick={() => setState('answered')}>
             <h5>{text}</h5>
         </li>
     );
 }
 
-export default function AnswerButtons() {
+export default function AnswerButtons({state, setState}) {
     return (
         <ul className="answer-buttons">
             {answerButtons.map((answer) => (
-                <SmallButton text={answer.text} borderColor={answer.borderColor} />)
+                <SmallButton>
+                    {answer.text}
+                    {answer.borderColor}
+                    {state} {setState}
+                </SmallButton>)
             )}
         </ul>
 
