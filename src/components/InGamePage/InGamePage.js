@@ -2,6 +2,9 @@ import { React, useState } from "react";
 
 import Header from "./Header.js";
 import Flashcard from "./Flashcard.js";
+import Congrats from "./Congrats.js";
+import TryAgain from "./TryAgain.js";
+
 
 import "./ingamepage.css";
 
@@ -15,10 +18,10 @@ export default function InGamePage({deck, questionCounter, setQuestionCounter}) 
      />;
   }
   if (gameState === 'success') {
-    renderGamePage = <>FINISHED: SUCCESS</>;
+    renderGamePage = <Congrats />;
   }
   if (gameState === 'failure') {
-    renderGamePage = <>FINISHED: FAILURE</>;
+    renderGamePage = <TryAgain/>;
   }
   
 

@@ -5,16 +5,17 @@ import StartPage from "./components/StartPage/StartPage.js";
 import InGamePage from "./components/InGamePage/InGamePage.js";
 
 
+
 const flashCardDecks = [
     [
-        "pergunta 001 ?",
-        "pergunta 002 ?",
-        "pergunta 003 ?",
-        "pergunta 004 ?",
-        "pergunta 005 ?",
-        "pergunta 006 ?",
-        "pergunta 007 ?",
-        "pergunta 008 ?"
+        "O que é JSX?",
+        "O React é: ",
+        "Componentes devem iniciar com: ",
+        "Podemos colocar _ dentro do JSX",
+        "O ReactDOM nos ajuda: ",
+        "Usamos o npm para: ",
+        "Usamos props para: ",
+        "Usamos estado (state) para: "
     ],
     [
         "pergunta 101 ?",

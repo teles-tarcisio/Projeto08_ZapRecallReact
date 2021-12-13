@@ -125,6 +125,23 @@ header img {
   font-weight: 700;
 }
 
+.congratulations,.try-again {
+  width: 100%;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.congratulations h6,.try-again h6 {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+}
 
-
+.congratulations p,.try-again p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
